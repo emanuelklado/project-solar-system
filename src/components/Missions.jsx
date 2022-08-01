@@ -6,11 +6,11 @@ import MissionCard from './MissionCard';
 export default class Missions extends Component {
   render() {
     return (
-      <section>
+      <section className="container-missoes">
         <div data-testid="missions">
-          <Title headline="Missões" />
+          <Title headline="Missoes" />
         </div>
-        <div>
+        <div className="container-card">
           {missions.map((el, index) => (<MissionCard
             name={ el.name }
             year={ el.year }

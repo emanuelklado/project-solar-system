@@ -1,12 +1,23 @@
-import React, { Component } from 'react';
-import PropType from 'prop-types';
+import React, { Component } from "react";
+import PropType from "prop-types";
+import houston from "../audio/houston.mp3"
+// Falta ajustar esta função, ta dando erro de promess!!!
+
+
+function easterEgg(event) {
+  const music = new Audio(houston);
+  if ((event.target.firstChild.innerText === "Apollo 13")) {
+    music.play();
+  }
+}
 
 export default class MissionCard extends Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{name}</p>
+      <div onClick={easterEgg} data-testid="mission-card">
+        <h3 data-testid="mission-name">{name}</h3>
+        <hr />
         <p data-testid="mission-year">{year}</p>
         <p data-testid="mission-country">{country}</p>
         <p data-testid="mission-destination">{destination}</p>

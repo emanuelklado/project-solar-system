@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url('./fonts/Azonix.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Futuristic';
+    src: url('./fonts/Futuristic\ Armour.otf') format('opentype');
+  }
+  
+  body {
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  .header-title {
+    color: white;
+    text-align: center;
+    font-family: Futuristic;
+    font-size: xxx-large;
+  }
+  
+  h2 {
+    color: white;
+    font-size: xx-large;
+    border: 2px solid white;
+    width: 800px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    font-family: Futuristic;
+  }
+  
+  [data-testid="solar-system"] {
+    border: 2px solid red;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .planets {
+    display: flex;
+  }
+  
+  /* div container planet*/
+  [data-testid="planet-card"] {
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* img planet*/
+  [data-testid="planet-card"] img {
+  border: 3px dashed pink;
+  width: 75%;
+  }
+  
+  /* p nome planet*/
+  [data-testid="planet-card"] p {
+    font-size: x-large;
+    background-color: coral;
+  }
+  
+  [ data-testid="missions" ] {
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    /* width: 100%; */
+  }
+  
+  [data-testid="mission-card"] p {
+  margin: 7px 10px;
+  }
+  
+  [data-testid="mission-card"] h3 {
+    margin-left: 10px;
+  }
+  
+  .container-missoes {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  [ data-testid = 'mission-card' ] {
+    /* border: 3px solid white; */
+    background-color: #4444;
+    /* opacity: 0.8; */
+    border-radius: 18px;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: stretch;
+    width: 200px;
+    /* height: 220px; */
+    margin: 20px;
+    /* padding: 8px; */
+  }
+  
+  [ data-testid = 'mission-card' ]:hover {
+    background-color: #30142d;
+    opacity: 0.5;
+    border: 0.4px solid white;
+  }
+  
+  hr {
+    margin: 0;
+  }

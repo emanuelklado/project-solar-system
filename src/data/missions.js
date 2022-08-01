@@ -75,6 +75,12 @@ const Missions = [
     destination: 'Mercúrio',
   },
   {
+    name: 'Apollo 13',
+    year: '1970',
+    country: USA,
+    destination: 'Lua',
+  },
+  {
     name: 'Genesis',
     year: '2001',
     country: USA,
